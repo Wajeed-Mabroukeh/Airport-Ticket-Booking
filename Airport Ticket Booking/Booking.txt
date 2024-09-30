@@ -1,0 +1,6 @@
+k,5,5,110,Palestine,Turkey,2024-09-23,Aleaa,Istanbul,3
+vfv,11,2,110,Palestine,Turkey,2024-09-22,Aleaa,Istanbul,3
+dd,7779,2,110,Palestine,Turkey,2024-09-22,Aleaa,Istanbul,3
+ddc,556,2,110,Palestine,Turkey,2024-09-22,Aleaa,Istanbul,3
+nn,1110,5,110,Palestine,Turkey,2024-09-23,Aleaa,Istanbul,3
+hj,230,2,110,Palestine,Turkey,2024-09-22,Aleaa,Istanbul,3

@@ -1,0 +1,2 @@
+2,110,Palestine,Turkey,2024-09-22,Aleaa,Istanbul,3,6
+5,110,Palestine,Turkey,2024-09-23,Aleaa,Istanbul,3,3
