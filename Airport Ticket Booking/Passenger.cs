@@ -200,7 +200,7 @@ public class Passenger
     
     public void Cancel_a_booking(int id_book , int id_flight)
     {
-        Booking _book = null;
+        Booking _book = null; 
         foreach (var book in bookingsList)
         {
             if (book.id == id_book && book.flight.ID == id_flight)
