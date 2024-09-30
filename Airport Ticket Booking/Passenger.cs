@@ -73,6 +73,8 @@ public class Passenger
         Booking booking_Object = new Booking(name,id,flight_Object,flight_Object.Count_Passengers);
         bookingsList.Add(booking_Object);
     }
+    
+    
     public int Find_Element_Booking(int id)
     {
         for (int i = 0; i < bookingsList.Count; i++)
@@ -112,6 +114,8 @@ public class Passenger
         }
         return array_check;
     }
+    
+    
     public  List<Flights> Search_for_price(double price)
     {
         foreach (var flight in flightsList)
