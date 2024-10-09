@@ -1,0 +1,6 @@
+ID,Price,Departure_Country,Destination_Country,Departure_Date,Departure_Airport,Arrival_Airport,Class,Count_Passengers,AvailableSeats
+2,110,Palestine,Turkey,12/23/2024 1:10:00 AM,Aleaa,Istanbul,3,6,10
+5,110,Palestine,Turkey,5/23/2024 2:10:00 AM,Aleaa,Istanbul,3,3,12
+8,150,Palestine,Turkey,9/23/2024 3:10:00 PM,Aleaa,Istanbul,2,12,2
+9,220,Palestine,Turkey,10/30/2024 11:10:00 PM,Aleaa,Istanbul,1,0,1
+
