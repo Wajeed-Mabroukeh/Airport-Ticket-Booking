@@ -22,9 +22,7 @@ class Program
                 {
                     Console.WriteLine("What you need Service -_-?" + "\n"
                                                                    + "1.Show Flights" + "\n"
-                                                                   + "2.Batch Flight Upload\n"
-                                                                   + "3.Validate Imported Flight Data\n"
-                                                                   + "4.Dynamic Model Validation Details"
+                                                                   + "2.Batch Flight Upload"
                     );
                 }
                 else if (read_type.Trim() == "2")
@@ -51,6 +49,8 @@ class Program
                         {
                             Console.WriteLine(flight.ToString());
                         }
+
+                        Passenger.result_search = Passenger.flightsList;
 
                         if (read_type == "2")
                         {
@@ -160,7 +160,7 @@ class Program
                                     Console.WriteLine("Please enter Departure Date:");
                                     string read_Departure_Date = Console.ReadLine();
                                     List<Flights>? flight_DepartureDate = 
-                                        passenger.Search_for_Departure_Date(read_Departure_Date);
+                                        passenger.Search_for_Departure_Date(DateTime.Parse(read_Departure_Date));
                                     foreach (var res_price in flight_DepartureDate)
                                     {
                                         Console.WriteLine(res_price.ToString());
@@ -219,9 +219,9 @@ class Program
                                     }
                                     break;
                                 case "7":
-                                    Console.WriteLine("Please enter Class:"
-                                                      + "1.Economy"
-                                                      + "2.Business"
+                                    Console.WriteLine("Please enter Class:\n"
+                                                      + "1.Economy\n"
+                                                      + "2.Business\n"
                                                       + "3.First Class"
                                     );
                                     string read_Class = Console.ReadLine();
@@ -295,9 +295,29 @@ class Program
 
                             }
                 }
+                else if (read.Trim() == "2" && read_type.Trim() == "1" )
+                {
+                    List<Flights>? flight_readCsv =
+                        manager.ReadFlightsFromCsv(manager.filePath_FlightsCSV);
+                    manager.errors.Clear();
+                    Console.WriteLine("Flight data imported successfully:");
+                    foreach (var readCsv in flight_readCsv)
+                    {
+                         manager.ValidateFlight(readCsv,passenger);
+                        Console.WriteLine(readCsv.ToString());
+                       
+                    }
+                    Console.WriteLine("Errors found in imported flight data:");
+                    foreach (var error in manager.errors)
+                    {
+                        Console.WriteLine(error.ToString());
+                    }
+
+                }
             }
             catch (Exception e)
             {
+                Console.WriteLine(e.ToString());
                 Console.WriteLine("Please try Again _-_");
             }
         }

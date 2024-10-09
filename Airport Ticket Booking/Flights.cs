@@ -7,15 +7,15 @@ public class Flights
     public double Price { set; get; }
     public string Departure_Country { set; get; }
     public string Destination_Country { set; get; }
-    public string Departure_Date { set; get; }
+    public DateTime Departure_Date { set; get; }
     public string Departure_Airport { set; get; }
     public string Arrival_Airport { set; get; }
     public  int Class { set; get; }
-    
+    public  int? AvailableSeats { set; get; }
     public  int? Count_Passengers { set; get; }
 
     public Flights(int ID,double Price,string Departure_Country,string Destination_Country
-        ,string Departure_Date,string Departure_Airport ,string Arrival_Airport,int Class,int? Count_Passengers)
+        ,DateTime Departure_Date,string Departure_Airport ,string Arrival_Airport,int Class,int? Count_Passengers,int? AvailableSeats)
     {
          this.ID =ID ;
          this.Price = Price;
@@ -26,6 +26,7 @@ public class Flights
          this.Arrival_Airport = Arrival_Airport;
          this.Class = Class;
          this.Count_Passengers = Count_Passengers;
+         this.AvailableSeats = AvailableSeats;
         
     }
    

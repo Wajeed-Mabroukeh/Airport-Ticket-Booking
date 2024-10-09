@@ -3,6 +3,7 @@
 public class Search
 {
     public readonly string filePath_Flights = @"C:\Users\wajed\RiderProjects\Airport Ticket Booking\Airport Ticket Booking\Flights.txt";
+    public readonly string filePath_FlightsCSV = @"C:\Users\wajed\RiderProjects\Airport Ticket Booking\Airport Ticket Booking\Reader.CSV";
     public readonly string filePath_Booking = @"C:\Users\wajed\RiderProjects\Airport Ticket Booking\Airport Ticket Booking\Booking.txt";
     public static List<Flights> flightsList = new ();
     public static List<Booking> bookingsList = new ();
@@ -44,7 +45,7 @@ public class Search
         }
         return result_search;
     }
-    public  List<Flights> Search_for_Departure_Date(string Departure_Date)
+    public  List<Flights> Search_for_Departure_Date(DateTime Departure_Date)
     {
         result_search.Clear();
         foreach (var flight in flightsList)
