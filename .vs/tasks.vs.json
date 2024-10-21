@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-Unittest",
+      "appliesTo": "Airport Ticket Booking/Unittest.test",
+      "type": "launch"
+    }
+  ]
+}
