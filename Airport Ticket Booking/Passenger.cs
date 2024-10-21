@@ -9,10 +9,10 @@ public class Passenger : Search
     {
         int res_index = Find_Element_Booking(ID_Num);
         int? [] index = Find_Element_Flight(ID_flight);
-        bool isFull_flight = flightsList[(int)index[0]].Count_Passengers < flightsList[(int)index[0]].AvailableSeats;
+        bool is_not_Full_flight = flightsList[(int)index[0]].Count_Passengers < flightsList[(int)index[0]].AvailableSeats;
         if (bookingsList.Count == 0 || (res_index == -1 && index[0] != null && index[1] != null))
         {
-            if (isFull_flight)
+            if (is_not_Full_flight)
             {
                 ++flightsList[(int)index[0]].Count_Passengers;
                 add_new_booking(flightsList[(int)index[0]], Name, ID_Num);
@@ -29,7 +29,7 @@ public class Passenger : Search
             }
             
         }
-        else if (index[0] != null && index[1] != null && isFull_flight)
+        else if (index[0] != null && index[1] != null && is_not_Full_flight)
         {
                 if (bookingsList[res_index].flight.Departure_Date == flightsList[(int)index[0]].Departure_Date)
                 {
