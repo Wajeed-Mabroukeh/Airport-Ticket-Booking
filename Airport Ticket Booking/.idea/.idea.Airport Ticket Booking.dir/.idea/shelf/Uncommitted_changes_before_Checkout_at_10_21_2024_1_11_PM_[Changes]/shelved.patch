@@ -1,0 +1,17 @@
+Index: obj/rider.project.restore.info
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>17270331124328044
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/obj/rider.project.restore.info b/obj/rider.project.restore.info
+--- a/obj/rider.project.restore.info	
++++ b/obj/rider.project.restore.info	
+@@ -1,1 +1,1 @@
+-17270331124328044
+\ No newline at end of file
++17295054462079619
+\ No newline at end of file
+diff --git a/../README.md b/../README.md
+new file mode 100644

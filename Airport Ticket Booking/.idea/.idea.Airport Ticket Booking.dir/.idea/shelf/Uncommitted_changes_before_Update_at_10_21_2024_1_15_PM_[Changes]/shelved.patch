@@ -1,0 +1,32 @@
+Index: obj/rider.project.model.nuget.info
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>17284791048484897
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/obj/rider.project.model.nuget.info b/obj/rider.project.model.nuget.info
+--- a/obj/rider.project.model.nuget.info	(revision 6d70de40271257eeb1852762953cc2bd88e888b4)
++++ b/obj/rider.project.model.nuget.info	(date 1729505713698)
+@@ -1,1 +1,1 @@
+-17284791048484897
+\ No newline at end of file
++17295057064798169
+\ No newline at end of file
+Index: obj/rider.project.restore.info
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>17270331124328044
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/obj/rider.project.restore.info b/obj/rider.project.restore.info
+--- a/obj/rider.project.restore.info	(revision 6d70de40271257eeb1852762953cc2bd88e888b4)
++++ b/obj/rider.project.restore.info	(date 1729505712836)
+@@ -1,1 +1,1 @@
+-17270331124328044
+\ No newline at end of file
++17295055490478547
+\ No newline at end of file
+diff --git a/../README.md b/../README.md
+new file mode 100644

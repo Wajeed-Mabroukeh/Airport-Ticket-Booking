@@ -1,0 +1,15 @@
+Index: obj/rider.project.model.nuget.info
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>17284791048484897
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/obj/rider.project.model.nuget.info b/obj/rider.project.model.nuget.info
+--- a/obj/rider.project.model.nuget.info	
++++ b/obj/rider.project.model.nuget.info	
+@@ -1,1 +1,1 @@
+-17284791048484897
+\ No newline at end of file
++17295053819842204
+\ No newline at end of file
